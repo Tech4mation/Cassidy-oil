@@ -24,7 +24,7 @@ export default function CasstekMoto4t() {
                         <li class="breadcrumb-item active" aria-current="page">CASSTEK MOTO 4T 20W-40 API SF/CF</li>
                     </ol>
                 </nav>
-                <img src={sample} className="sample" alt="" />
+                <img loading="lazy" src={sample} className="sample" alt="" />
                 <div className="details">
                     <div className="description">
                         <h4>DESCRIPTION</h4>    
@@ -119,9 +119,6 @@ export default function CasstekMoto4t() {
                 </div>        
 
             </div>
-            <Project4 />
-            <News />
-            <Events />
         </div>
     )
 }

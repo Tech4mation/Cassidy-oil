@@ -8,7 +8,7 @@ export default function Footer() {
                     <div className="col-2 ">
                         <img src={logo3} />
                     </div>
-                    <div className="col-2">
+                    <div className="col-3">
                         <p className="mb-3">Our team</p>    
                         <ul>
                             <li>About us</li>
@@ -17,16 +17,7 @@ export default function Footer() {
                             <li>Contact</li>
                         </ul>
                     </div>
-                    <div className="col-2">
-                        <p className="mb-3">More</p>    
-                        <ul>
-                            <li>Projects</li>
-                            <li>Events</li>
-                            <li>Donate</li>
-                            <li>Blog</li>
-                        </ul>
-                    </div>
-                    <div className="col-2">
+                    <div className="col-3">
                         <p className="mb-3">Connect</p>    
                         <ul>
                             <li>Facebook</li>
@@ -35,12 +26,9 @@ export default function Footer() {
                             <li>LinkdIn</li>
                         </ul>
                     </div>
-                    <div className="col-4 ">
-                        <h4 className="text-white fw-bold">Subscribe to get the latest news</h4>
-                        <form class="d-flex">
-                            <input class="form-control py-2 bg-transparent border-dark text-white me-2" type="email" placeholder="Your email" aria-label="email" />
-                            <button class="btn btn-warning text-black" type="submit">Subscribe</button>
-                        </form>
+                    <div className="col-3">
+                        <p className="mb-3">Find Us</p>
+                        <span>Amazing Grace Plaza, by New Extension BBA Tradefair Lagos-Badagry Expressway</span>
                     </div>
                 </div>
             </div>

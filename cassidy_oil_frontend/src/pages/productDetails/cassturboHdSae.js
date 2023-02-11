@@ -24,7 +24,7 @@ export default function CassturboHdSae() {
                         <li class="breadcrumb-item active" aria-current="page">CASSTURBO HD SAE40 API CF/SF</li>
                     </ol>
                 </nav>
-                <img src={sample} className="sample" alt="" />
+                <img loading="lazy" src={sample} className="sample" alt="" />
                 <div className="details">
                     <div className="description">
                         <h4>DESCRIPTION</h4>    
@@ -121,9 +121,6 @@ export default function CassturboHdSae() {
                 </div>        
 
             </div>
-            <Project4 />
-            <News />
-            <Events />
         </div>
     )
 }

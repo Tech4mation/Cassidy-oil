@@ -50,6 +50,9 @@ body {
 .breadcrumb .active {
   color: black !important;
 }
+.product {
+  margin-bottom: 150px;
+}
 .product .details .benefits ul {
   padding-left: 20px;  
   list-style-image: url('images/ellipse1.svg');
@@ -98,6 +101,8 @@ body {
   font-weight: 600;
 }
 
+
+
 /* Home */
 .Home .btn-warning {
   background-color: #F8A135 !important;
@@ -110,17 +115,17 @@ body {
   color: #525560;
 }
 .Home .section1 {
-  background-image:  url("./images/bg2.png"), url("./images/bg1.png"); 
+  background-image:  url("./images/bgcar.png"); 
   background-repeat: no-repeat no-repeat;
   background-position: center center;
   background-size: cover ;
-  height: 92vh;
+  height: 93vh;
 }
 .Home .section1 .oilSample1 {
   width: 53vw;
   position: relative;
   left: 25px;
-  top: 35px;
+  top: 130px;
 }
 .Home .section1 .bg2 {
   width: 100vw;
@@ -137,9 +142,10 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .Home .section2 .oilSample2 {
-  width: 40vw !important;
-  position: relative;
-  left: 25px;
+  width: 35vw !important;
+  float: right;
+  /* position: relative;
+  left: 25px; */
 }
 .Home .section2 .row {
   padding-left: 100px;  
@@ -160,6 +166,9 @@ body {
 .Home .section3 {
   background-color: #F8F8F8;
 }
+.Home .section3 .oilSample4 {
+  width: 45vw !important;
+}
 .Home .section3 .content {
   padding-left: 100px; 
 }
@@ -173,25 +182,39 @@ body {
 
 }
 .Home .section4 .projects .project1 {
-  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.52), rgba(9, 9, 9, 0.73)), url("./images/bg3.png");
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.2), rgba(9, 9, 9, 0.2)), url("./images/person1.png");
   background-size: cover;
-  cursor: pointer;
+  height: 50vh;
 }
 .Home .section4 .projects .project2 {
-  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.52), rgba(9, 9, 9, 0.73)), url("./images/bg4.png");
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.2), rgba(9, 9, 9, 0.2)), url("./images/person2.png");
   background-size: cover;
   background-position: center;
-  cursor: pointer;
+  height: 50vh;
 }
 .Home .section4 .projects .project3 {
-  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.52), rgba(9, 9, 9, 0.73)), url("./images/bg5.png");
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.2), rgba(9, 9, 9, 0.2)), url("./images/person3.png");
   background-size: cover;
   background-position: center;
-  cursor: pointer;
+  height: 50vh;
+  /* cursor: pointer; */
+}
+.Home .section4 .projects .project1:hover {
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.1), rgba(9, 9, 9, 0.1)), url("./images/person1.png");
+}
+.Home .section4 .projects .project2:hover {
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.1), rgba(9, 9, 9, 0.1)), url("./images/person2.png");
+}
+.Home .section4 .projects .project3:hover {
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.1), rgba(9, 9, 9, 0.1)), url("./images/person3.png");
 }
 .Home .section4 .card {
   cursor: pointer;
 }
+.Home .section4 .form {
+  margin-top: 100px;
+}
+
 
 /* Footer */
 .Footer {
@@ -199,6 +222,9 @@ body {
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: #152C41;
+}
+.Footer span {
+  color: rgba(224, 225, 225, 0.7);
 }
 .Footer ul {
   padding-left: 0;

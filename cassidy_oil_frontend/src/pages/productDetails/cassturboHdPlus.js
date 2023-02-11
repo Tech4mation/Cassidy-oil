@@ -24,7 +24,7 @@ export default function CassturboHdPlus() {
                         <li class="breadcrumb-item active" aria-current="page">CASSTURBO HD PLUS 15W40 CF-4/SG</li>
                     </ol>
                 </nav>
-                <img src={sample} className="sample" alt="" />
+                <img loading="lazy" src={sample} className="sample" alt="" />
                 <div className="details">
                     <div className="description">
                         <h4>DESCRIPTION</h4>    
@@ -118,9 +118,6 @@ export default function CassturboHdPlus() {
                 </div>        
 
             </div>
-            <Project4 />
-            <News />
-            <Events />
         </div>
     )
 }

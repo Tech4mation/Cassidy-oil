@@ -24,7 +24,7 @@ export default function CassgoldPassenger() {
                         <li class="breadcrumb-item active" aria-current="page">CASSGOLD PASSENGER MOTOR OIL 20W-50 API SG/CF-4</li>
                     </ol>
                 </nav>
-                <img src={sample} className="sample" alt="" />
+                <img loading="lazy" src={sample} className="sample" alt="" />
                 <div className="details">
                     <div className="description">
                         <h4>DESCRIPTION</h4>    
@@ -119,9 +119,6 @@ export default function CassgoldPassenger() {
                 </div>        
 
             </div>
-            <Project4 />
-            <News />
-            <Events />
         </div>
     )
 }

@@ -50,7 +50,7 @@ export default class Lubricants extends React.Component {
                             <div className="row">
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={blueOil} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={blueOil} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSTEK PREMIUM 4T 20W-40 API SL/MA2</h6>
                                             <p class="card-text small">Premium Multigrade Okada, Kekenapep engine oil</p>
@@ -60,7 +60,7 @@ export default class Lubricants extends React.Component {
                                 </div>
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={greenOil} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={greenOil} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSTEK MOTO 4T 20W-40 API SF/CF</h6>
                                             <p class="card-text small">High Performance Multigrade Okada, Kekenapep engine oil</p>
@@ -70,7 +70,7 @@ export default class Lubricants extends React.Component {
                                 </div>
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={greyOil} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={greyOil} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF</h6>
                                             <p class="card-text small">Super Performance Multigrade designed with deposit guard technology</p>
@@ -81,7 +81,7 @@ export default class Lubricants extends React.Component {
 
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={goldOil} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={goldOil} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSGOLD POWER MOTOR OIL SAE40 API SF/CF</h6>
                                             <p class="card-text small">High Performance mono grade mineral engine oil</p>
@@ -91,7 +91,7 @@ export default class Lubricants extends React.Component {
                                 </div>
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={blackOil} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={blackOil} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSGOLD PASENGER MOTOR OIL 20W-50 API SG/CF-4</h6>
                                             <p class="card-text small">World class mineral technology engine oil designed for superior wear protection</p>
@@ -101,7 +101,7 @@ export default class Lubricants extends React.Component {
                                 </div>
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={redOil} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={redOil} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-40 API SN/CF</h6>
                                             <p class="card-text small">Synthetic technology engine oil designed for superior wear protection</p>
@@ -112,7 +112,7 @@ export default class Lubricants extends React.Component {
 
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={goldOil2} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={goldOil2} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSTURBO HD SAE40 API CF/SF </h6>
                                             <p class="card-text small">Superior performance Multigrade diesel engine oil designed with active protection </p>
@@ -122,7 +122,7 @@ export default class Lubricants extends React.Component {
                                 </div>
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={greenOil2} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={greenOil2} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSTURBO HD PLUS 15W40 CF-4/SG</h6>
                                             <p class="card-text small">Fleet multigrade diesel engine oil designed to provide superior performanc for trucks, buses, light commercial vehicles</p>
@@ -132,7 +132,7 @@ export default class Lubricants extends React.Component {
                                 </div>
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={redOil2} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={redOil2} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSTURBO HD ULTRA 15W40 CI-4</h6>
                                             <p class="card-text small">Long drain premium performance Multigrade diesel engine oil designed for modern heavy duty engine</p>
@@ -143,7 +143,7 @@ export default class Lubricants extends React.Component {
 
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={blueOil2} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={blueOil2} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSTURBO HD SAE40 API CF/SF </h6>
                                             <p class="card-text small">Superior performance Multigrade diesel engine oil designed with active protection </p>
@@ -153,7 +153,7 @@ export default class Lubricants extends React.Component {
                                 </div>
                                 <div className="col-4">
                                     <div class="card border-white " >
-                                        <img src={greyOil2} class="card-img-top ps-0 ms-0" alt="..." />
+                                        <img loading="lazy" src={greyOil2} class="card-img-top ps-0 ms-0" alt="..." />
                                         <div class="card-body">
                                             <h6 class="card-title">CASSTRANS DEX D2 ATF DEXRON IID</h6>
                                             <p class="card-text small">Multivehicle automatics transmission fluid and power steering fluid</p>
@@ -175,9 +175,9 @@ export default class Lubricants extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Project4 />
+                {/* <Project4 />
                 <News />
-                <Events />
+                <Events /> */}
             </div>
         )
     }

@@ -24,7 +24,7 @@ export default function CasstransDexH3() {
                         <li class="breadcrumb-item active" aria-current="page">CASSTEK PREMIUM 4T 20W-40 API SL/MA2CASSTRANS DEX H3 ATF DEXRON IIIH/IIIM</li>
                     </ol>
                 </nav>
-                <img src={sample} className="sample" alt="" />
+                <img loading="lazy" src={sample} className="sample" alt="" />
                 <div className="details">
                     <div className="description">
                         <h4>DESCRIPTION</h4>    
@@ -118,9 +118,7 @@ export default function CasstransDexH3() {
                 </div>        
 
             </div>
-            <Project4 />
-            <News />
-            <Events />
+
         </div>
     )
 }

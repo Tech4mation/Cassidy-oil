@@ -10,33 +10,33 @@ export default function News() {
             <div className="mt-5 news">
             <div className="d-flex  align-items-center">
                 <h3 className="fw-bold py-4 me-4">Read Our News</h3>
-                <img src={greyLine1} height="3px" width="80%" alt="" />  
+                <img loading="lazy" src={greyLine1} height="3px" width="80%" alt="" />  
             </div>  
             
             <div className="d-flex">
                 <div className="card border-white me-3">
-                <img src={cardImage1}/>  
+                <img loading="lazy" src={cardImage1}/>  
                 <div className="card-body">
                     <h5 className="card-title">Don’t destroy greenery and don’t spoil scenery</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
                 </div>
                 </div>
                 <div className="card border-white me-3">
-                <img src={cardImage2}/>  
+                <img loading="lazy" src={cardImage2}/>  
                 <div className="card-body">
                     <h5 className="card-title"> Is climate change happening faster than expected?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
                 </div>
                 </div>
                 <div className="card border-white me-3">
-                <img src={cardImage3}/>  
+                <img loading="lazy" src={cardImage3}/>  
                 <div className="card-body">
                     <h5 className="card-title">Top 10 facts about wind farms you didn't know</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
                 </div>
                 </div>
                 <div className="card border-white">
-                <img src={cardImage4}/>  
+                <img loading="lazy" src={cardImage4}/>  
                 <div className="card-body">
                     <h5 className="card-title">Our goal is to make water available for everyone</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>

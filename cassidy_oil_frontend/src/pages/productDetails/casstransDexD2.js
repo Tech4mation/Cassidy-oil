@@ -24,7 +24,7 @@ export default function CasstransDexD2() {
                         <li class="breadcrumb-item active" aria-current="page">CASSTRANS DEX D2 ATF DEXRON IID</li>
                     </ol>
                 </nav>
-                <img src={sample} className="sample" alt="" />
+                <img loading="lazy" src={sample} className="sample" alt="" />
                 <div className="details">
                     <div className="description">
                         <h4>DESCRIPTION</h4>    
@@ -118,9 +118,6 @@ export default function CasstransDexD2() {
                 </div>        
 
             </div>
-            <Project4 />
-            <News />
-            <Events />
         </div>
     )
 }

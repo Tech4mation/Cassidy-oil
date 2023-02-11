@@ -6,6 +6,7 @@ import Header from './components/Header';
 import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.css';
+import'bootstrap/dist/js/bootstrap.bundle';
 import { Route, Routes, BrowserRouter as Router, } from 'react-router-dom';
 import Footer from './components/Footer';
 import Lubricants from './pages/Lubricants';
