@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Rubik:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Nunito:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic&subset=latin,latin-ext');
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    font-family: 'DM Sans' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.project4 {
+  background-image: linear-gradient(to bottom, rgba(25, 68, 95, 0.52), rgba(98, 98, 98, 0.73)), url("./images/bg6.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 80px !important;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  cursor: pointer;
+}
+.events .title {
+  font-family: 'Rubik'; 
+}
+.events .event1 {
+  background-color: #FEF0DF;
+  cursor: pointer;
+}
+.events .event1 h4 {
+  width: 90%;
+}
+.events .event2 {
+  background-color: #FEF0DF;
+  cursor: pointer;
+}
+.events .smaller {
+  font-size: smaller;
+  font-weight: 600;
+}
+.events .rounded-circle {
+  width: 35px;
+  height: 35px;
+}
+.breadcrumb .breadcrumb-item span {
+  color: rgba(0, 0, 0, 0.4);
+}
+.breadcrumb .active {
+  color: black !important;
+}
+.product .details .benefits ul {
+  padding-left: 20px;  
+  list-style-image: url('images/ellipse1.svg');
+}
+.product .details .benefits ul li {
+  padding-bottom: 8px;
+}
+.product .section1 {
+  background-image: url("./images/bg_lube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+.product .section2 {
+  padding-top: 30px;
+}
+.product .details {
+  padding-top: 30px;
+}
+.product .details h4 {
+  font-weight: 600;
+}
+.product  .sample {
+  float: right;
+}
+.product .download {
+  cursor: pointer;
+}
+.product .btn-warning {
+  background-color: #F8A135;
+}
+
+
+
+/* Header component */
+.Header {
+  height: 8vh;
+}
+.Header .navbar-nav .nav-item {
+  z-index: 10;
+  color: pink !important;
+}
+.Header .navbar-nav .active .nav-link {
+  color: #152C41 !important;
+  font-weight: 600;
+}
+
+/* Home */
+.Home .btn-warning {
+  background-color: #F8A135 !important;
+}
+.Home h1 {
+  color: #1D2130;
+  font-family: 'Rubik';
+}
+.Home .main-text {
+  color: #525560;
+}
+.Home .section1 {
+  background-image:  url("./images/bg2.png"), url("./images/bg1.png"); 
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover ;
+  height: 92vh;
+}
+.Home .section1 .oilSample1 {
+  width: 53vw;
+  position: relative;
+  left: 25px;
+  top: 35px;
+}
+.Home .section1 .bg2 {
+  width: 100vw;
+  left: 0px;
+  top: 60px;
+  z-index: 1;
+}
+
+.Home .section2 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.Home .section2 h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Home .section2 .oilSample2 {
+  width: 40vw !important;
+  position: relative;
+  left: 25px;
+}
+.Home .section2 .row {
+  padding-left: 100px;  
+}
+.Home .section2 .header {
+  color: #AFAFAF;
+}
+.Home .section2 .main-text {
+  font-family: 'Nunito';
+}
+.Home .section2 .btn-warning {
+  font-family: 'Roboto';
+}
+.Home .section2 .footer span {
+  width: 200px;
+}
+
+.Home .section3 {
+  background-color: #F8F8F8;
+}
+.Home .section3 .content {
+  padding-left: 100px; 
+}
+.Home .section3 .verticalLine1 {
+  top: 20px;
+  left: -1px;
+}
+
+.Home .section4 .content h1{
+  padding-left: 100px;
+
+}
+.Home .section4 .projects .project1 {
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.52), rgba(9, 9, 9, 0.73)), url("./images/bg3.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.Home .section4 .projects .project2 {
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.52), rgba(9, 9, 9, 0.73)), url("./images/bg4.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.Home .section4 .projects .project3 {
+  background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.52), rgba(9, 9, 9, 0.73)), url("./images/bg5.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.Home .section4 .card {
+  cursor: pointer;
+}
+
+/* Footer */
+.Footer {
+  color: white;  
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #152C41;
+}
+.Footer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.Footer ul li{
+  color: rgba(224, 225, 225, 0.7);
+  cursor: pointer;
+  padding-bottom: 10px;
+  transition: all .3s;
+}
+.Footer ul li:hover {
+  color: rgba(224, 225, 225);
+}
+.Footer .btn-warning {
+  background-color: #F8A135 !important;
+}
+
+/* Lubricants */
+.Lubricants .section1 {
+  background-image: url("./images/bg_lube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+.Lubricants .section2 {
+  padding-top: 30px;
+}
+.Lubricants .side-links a {
+ color: black;
+ font-weight: 600;
+ text-decoration: none;
+}
+.Lubricants .section2 .side-links .active {
+  color: #F8A135 !important;
+}
+.Lubricants .section2 .container {
+  width: 70vw;
+}
+.Lubricants .card {
+  margin-bottom: 40px;
+}
+.Lubricants .card .card-img-top {
+  width: fit-content;
+  height: 30vh;
+}
+.Lubricants .card .card-title {
+  font-weight: 600;
+}
+.Lubricants .btn-warning {
+  background-color: #F8A135;
+}
+
+
