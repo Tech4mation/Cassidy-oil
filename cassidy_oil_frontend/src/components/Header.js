@@ -9,7 +9,7 @@ export default function Header() {
         <header className ="Header px-5 fixed-top">            
             <nav className="navbar py-1 navbar-expand-lg navbar-white ">
                 <Link className="navbar-brand" to="/">
-                    <img src={logo3} width="80"  alt="" />
+                    <img src={logo3} width="130"  alt="" />
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

@@ -51,6 +51,7 @@ body {
   color: black !important;
 }
 .product {
+  margin-top: 65px;
   margin-bottom: 150px;
 }
 .product .details .benefits ul {
@@ -104,6 +105,9 @@ body {
 
 
 /* Home */
+.Home {
+  margin-top: 65px;
+}
 .Home .btn-warning {
   background-color: #F8A135 !important;
 }
@@ -115,11 +119,17 @@ body {
   color: #525560;
 }
 .Home .section1 {
-  background-image:  url("./images/bgcar.png"); 
+  /* background-image:  url("./images/bgcar.png"); 
   background-repeat: no-repeat no-repeat;
   background-position: center center;
-  background-size: cover ;
+  background-size: cover ; */
   height: 93vh;
+}
+.Home .section1 .carousel-caption {
+  left: 50px !important;
+}
+.Home .section1 .carousel-caption h1 {
+  text-shadow: 0 0 40px white;
 }
 .Home .section1 .oilSample1 {
   width: 53vw;
@@ -244,6 +254,9 @@ body {
 }
 
 /* Lubricants */
+.Lubricants {
+  margin-top: 65px;
+}
 .Lubricants .section1 {
   background-image: url("./images/bg_lube.svg");
   background-repeat: no-repeat;

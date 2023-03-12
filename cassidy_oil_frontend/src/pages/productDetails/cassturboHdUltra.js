@@ -1,17 +1,12 @@
 import { Link } from "react-router-dom";
 import sample from "../../images/cassturboHdUltraSample.svg";
 import pdf from "../../images/pdfIcon.svg";
-
-import Project4 from "../../components/Project4";
-import News from "../../components/News";
-import Events from "../../components/Events";
-
 import ScrollToTopOnMount from "../../components/scrolltoview";
 
 
 export default function CassturboHdUltra() {
     return (
-        <div className="CasstekPremium4t product mt-5">
+        <div className="CasstekPremium4t product ">
         <ScrollToTopOnMount />    
             <div className="section1 d-flex align-items-center justify-content-center">
                 <h1 className="text-white fw-bold display-3">Automotive Lubricants</h1>

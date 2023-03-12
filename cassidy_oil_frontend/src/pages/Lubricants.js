@@ -28,7 +28,7 @@ export default class Lubricants extends React.Component {
 
     render() {
         return (
-            <div className="Lubricants mt-5">
+            <div className="Lubricants ">
                 <ScrollToTopOnMount />
                 <div className="section1 d-flex align-items-center justify-content-center">
                     <h1 className="text-white fw-bold display-3">Automotive Lubricants</h1>

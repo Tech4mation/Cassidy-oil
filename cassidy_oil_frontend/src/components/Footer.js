@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="container-fluid px-4">
                 <div className="row">
                     <div className="col-2 ">
-                        <img src={logo3} />
+                        <img src={logo3} width="100"/>
                     </div>
                     <div className="col-3">
                         <p className="mb-3">Our team</p>    

@@ -1,7 +1,12 @@
 import ScrollToTopOnMount from "../components/scrolltoview";
 import { Link } from "react-router-dom";
 
+import bgcar from "../images/bgcar.png";
+import bgcar2 from "../images/bgcar2.png";
+import component1 from "../images/component1.svg";
+import component2 from "../images/component2.svg";
 import oilSample1 from "../images/oilSample1.png";
+import oilSample1x from "../images/oilSample1x.png";
 import oilSample3 from "../images/oilSample3.png";
 import oilSample4 from "../images/oilSample4.png";
 import yellowIcon from "../images/yellowIcon.svg";
@@ -24,26 +29,42 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="Home mt-5" id="home">
+      <div className="Home " id="home">
         <ScrollToTopOnMount />
-        
-        <section className='section1 px-5 '>
-            <div className='container-fluid '>   
-                <div className='row align-items-end'>
-                    <div className='px-0 col-lg-5 col-md-6 col-12 text-md-left '>
-                        <h1 className='fw-semibold text-white display-5 mb-0'>
-                            High Quality </h1>
-                        <h1 className='fw-semibold text-white display-5'>
-                            Premium <br/>Lubricants</h1>
-                    </div>
-                    <div className='col-lg-7 col-md-6 col-12 '> 
-                        <img className='oilSample1' alt='oil sample' src={oilSample1} />
-                    </div>
-                    {/* <img className='position-absolute bg2' alt='oil sample' src={bg2} /> */}
+        <section className="section1">
+          <div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="6000">
+                <img class="d-block w-100" src={bgcar}  alt="First slide" />
+                <div class="carousel-caption text-start d-none d-md-flex align-items-center justify-content-between">
+                  <div className="mt-5">
+                    <h1 className='fw-semibold text-white display-5 mb-0'>
+                        High Quality </h1>
+                    <h1 className='fw-semibold text-white display-5'>
+                        Premium <br/>Lubricants</h1>  
+                    <img src={component1}/>
+                  </div>  
+                  <img className="carouselCaptionImage position-relative" src={oilSample1} width="70%" style={{'left': '200px'}}/>
                 </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="6000">
+                <img class="d-block w-100" src={bgcar2} alt="Second slide" />
+                <div class="carousel-caption text-start d-none d-md-flex align-items-center justify-content-between">
+                  <div>
+                    <h1 className='fw-semibold text-white display-5 mb-0'>
+                          Ensuring optimal </h1>
+                    <h1 className='fw-semibold text-white display-5'>
+                        engine protection <br/> and performance.</h1>  
+                      <img src={component2}/>
+                  </div>  
+                  <img className="carouselCaptionImage position-relative" src={oilSample1x} width="46%" style={{'left': '150px'}} />
+                </div>
+              </div>
             </div>
+          </div>
         </section>
-  
+
         <section className='section2 px-5' id="about-us">
             <div className='container-fluid pt-4'>
                 <div className="header d-flex align-items-center ">

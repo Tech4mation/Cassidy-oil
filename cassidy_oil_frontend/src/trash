@@ -61,3 +61,21 @@
                       </div>
                       <img src={supportersLogos} />
                     </footer>                    
+
+
+                    <section className='section1 px-5 '>
+                      <div className='container-fluid '>   
+                          <div className='row align-items-end'>
+                              <div className='px-0 col-lg-5 col-md-6 col-12 text-md-left '>
+                                  <h1 className='fw-semibold text-white display-5 mb-0'>
+                                      High Quality </h1>
+                                  <h1 className='fw-semibold text-white display-5'>
+                                      Premium <br/>Lubricants</h1>
+                              </div>
+                              <div className='col-lg-7 col-md-6 col-12 '> 
+                                  <img className='oilSample1' alt='oil sample' src={oilSample1} />
+                              </div>
+                              {/* <img className='position-absolute bg2' alt='oil sample' src={bg2} /> */}
+                          </div>
+                      </div>
+                  </section>                    
