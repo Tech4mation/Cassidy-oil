@@ -5,10 +5,10 @@ export default function Footer() {
         <footer className="Footer px-4" id="footer">
             <div className="container-fluid px-4">
                 <div className="row">
-                    <div className="col-2 ">
+                    <div className="col-6 col-md-2 ">
                         <img src={logo3} width="100"/>
                     </div>
-                    <div className="col-3">
+                    <div className="col-md-3 col-6">
                         <p className="mb-3">Our team</p>    
                         <ul>
                             <li>About us</li>
@@ -17,7 +17,7 @@ export default function Footer() {
                             <li>Contact</li>
                         </ul>
                     </div>
-                    <div className="col-3">
+                    <div className="col-6 col-md-3">
                         <p className="mb-3">Connect</p>    
                         <ul>
                             <li>Facebook</li>
@@ -26,7 +26,7 @@ export default function Footer() {
                             <li>LinkdIn</li>
                         </ul>
                     </div>
-                    <div className="col-3">
+                    <div className="col-6 col-md-3">
                         <p className="mb-3">Find Us</p>
                         <span>Amazing Grace Plaza, by New Extension BBA Tradefair Lagos-Badagry Expressway</span>
                     </div>

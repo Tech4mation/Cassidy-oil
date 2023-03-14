@@ -13,7 +13,7 @@ export default function News() {
                 <img loading="lazy" src={greyLine1} height="3px" width="80%" alt="" />  
             </div>  
             
-            <div className="d-flex">
+            <div className="d-flex flex-md-row flex-column">
                 <div className="card border-white me-3">
                 <img loading="lazy" src={cardImage1}/>  
                 <div className="card-body">

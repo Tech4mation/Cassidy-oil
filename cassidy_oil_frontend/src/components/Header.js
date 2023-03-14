@@ -3,26 +3,38 @@ import $ from 'jquery';
 
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+    const [navbarToggle, setNavbarToggle] = useState(false);
+    const toggleNavbar = () => {
+      if (navbarToggle) $('#headerNavbar').addClass('collapse')
+      else $('#headerNavbar').removeClass('collapse')
+
+      setNavbarToggle(!navbarToggle)
+    }
+
+
     return (
-        <header className ="Header px-5 fixed-top">            
-            <nav className="navbar py-1 navbar-expand-lg navbar-white ">
+        <header className ="Header px-5 fixed-top">
+            <nav class="navbar py-1 navbar-expand-lg bg-white">
+              <div class="container-fluid">
                 <Link className="navbar-brand" to="/">
-                    <img src={logo3} width="130"  alt="" />
+                  <img src={logo3} width="130"  alt="" />
                 </Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" onClick={() => toggleNavbar()} type="button" data-bs-target="#headerNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse d-flex justify-content-end " id="navbarNavDropdown">
-                    <ul className="navbar-nav">
-                        <li className="nav-item me-3 active" id="nav-item1" >
+
+                <div class="collapse navbar-collapse" id="headerNavbar">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li className="nav-item me-3 active" id="nav-item1" >
                             <HashLink className="nav-link" to="/#home" onClick={(e) => {
                                 $('.nav-item').removeClass('active')
                                 e.target.parentElement.classList.add('active')
                         }}>Home</HashLink>
-                        </li>
-                        <li className="nav-item me-3" id="nav-item2">
+                    </li>
+                    <li className="nav-item me-3" id="nav-item2">
                             <HashLink className="nav-link" to="/#about-us" onClick={(e) => {
                                 $('.nav-item').removeClass('active')
                                 e.target.parentElement.classList.add('active')
@@ -46,8 +58,9 @@ export default function Header() {
                                 e.target.parentElement.classList.add('active')
                         }}>Contact Us</HashLink>
                         </li>
-                    </ul>
+                  </ul>
                 </div>
+              </div>
             </nav>
         </header>
     )

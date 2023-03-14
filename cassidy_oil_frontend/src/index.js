@@ -23,11 +23,15 @@ import CassturboHdPlus from './pages/productDetails/cassturboHdPlus';
 import CassturboHdSae from './pages/productDetails/cassturboHdSae';
 import CassturboHdUltra from './pages/productDetails/cassturboHdUltra';
 
+// import "bootstrap/js/src/collapse.js";
+// import "../node_modules/jquery/dist/jquery.js";
+// import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+
 class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
+        <div >
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />

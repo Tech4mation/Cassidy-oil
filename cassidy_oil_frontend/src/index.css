@@ -119,17 +119,21 @@ body {
   color: #525560;
 }
 .Home .section1 {
-  /* background-image:  url("./images/bgcar.png"); 
-  background-repeat: no-repeat no-repeat;
-  background-position: center center;
-  background-size: cover ; */
   height: 93vh;
 }
-.Home .section1 .carousel-caption {
-  left: 50px !important;
+.Home .section1 .carousel-item {
+  height: 93vh;
 }
+.Home .section1 .carousel-item .banner{
+  height: 100vh;
+}
+
+
+/* .Home .section1 .carousel-caption {
+  left: 50px !important;
+} */
 .Home .section1 .carousel-caption h1 {
-  text-shadow: 0 0 40px white;
+  text-shadow: 0 0 40px black;
 }
 .Home .section1 .oilSample1 {
   width: 53vw;
@@ -189,8 +193,13 @@ body {
 
 .Home .section4 .content h1{
   padding-left: 100px;
-
 }
+@media only screen and (max-width: 768px) {
+  .Home .section4 .content h1{
+    padding-left: 20px;
+  }
+}
+
 .Home .section4 .projects .project1 {
   background-image: linear-gradient(to bottom, rgba(36, 36, 37, 0.2), rgba(9, 9, 9, 0.2)), url("./images/person1.png");
   background-size: cover;
@@ -285,6 +294,13 @@ body {
   width: fit-content;
   height: 30vh;
 }
+@media only screen and (max-width: 768px) {
+  .Lubricants .card .card-img-top {
+    width: fit-content;
+    height: 20vh;
+  }  
+}
+
 .Lubricants .card .card-title {
   font-weight: 600;
 }
