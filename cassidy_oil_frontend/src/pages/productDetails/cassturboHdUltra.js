@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sample from "../../images/cassturboHdUltraSample.svg";
+import sample from "../../images/cassturboHdUltraSample.png";
 import pdf from "../../images/pdfIcon.svg";
 import ScrollToTopOnMount from "../../components/scrolltoview";
 

@@ -14,9 +14,10 @@ import redOil from "../images/redOil.svg";
 import redOil2 from "../images/redOil2.svg";
 import goldOil2 from "../images/goldOil2.svg";
 import greenOil2 from "../images/greenOil2.svg";
-import blueKeg from "../images/blueKeg.png";
-import blackKeg from "../images/blackKeg.png";
-import drum from "../images/drum.png";
+import blueKeg from "../images/blueKegN.png";
+import blackKeg from "../images/blackKegN.png";
+import drumYellow from "../images/drumYellow.png";
+import drumBlue from "../images/drumBlue.png";
 
 import $ from "jquery"; 
 
@@ -103,7 +104,12 @@ const products = [
         desc: "",
         link: null,
         category: "HDEO",
-        src: drum },
+        src: drumYellow },
+    {   title: "CASSTURBO HD SAE40 API SF/CF 25L 200L",
+        desc: "",
+        link: null,
+        category: "HDEO",
+        src: drumBlue },
 ]
 
 export default class Lubricants extends React.Component {

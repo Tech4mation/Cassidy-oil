@@ -129,11 +129,21 @@ body {
 }
 
 
-/* .Home .section1 .carousel-caption {
-  left: 50px !important;
-} */
+.Home .section1 .carousel-caption {
+  left: 0px;
+  bottom: 0px;
+  padding-left: 50px;
+  background: linear-gradient(to top ,#090806 10%, #03030200 90%) ;
+  width: 100vw;
+  /* background-color: red; */
+  /* height: 300px; */
+}
 .Home .section1 .carousel-caption h1 {
   text-shadow: 0 0 40px black;
+}
+.Home .section1 .carouselCaptionImage {
+  width: 40%;
+  bottom: 0px;
 }
 .Home .section1 .oilSample1 {
   width: 53vw;

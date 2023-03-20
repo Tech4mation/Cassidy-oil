@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sample from "../../images/cassturboHdSaeSample.svg";
+import sample from "../../images/cassturboHdSaeSample.png";
 import pdf from "../../images/pdfIcon.svg";
 
 import Project4 from "../../components/Project4";

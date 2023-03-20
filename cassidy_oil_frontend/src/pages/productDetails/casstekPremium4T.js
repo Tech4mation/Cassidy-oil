@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sample from "../../images/blueOilfb.svg";
+import sample from "../../images/blueOilfbN.png";
 import pdf from "../../images/pdfIcon.svg";
 
 import Project4 from "../../components/Project4";

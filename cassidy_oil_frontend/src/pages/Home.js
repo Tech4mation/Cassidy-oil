@@ -9,10 +9,10 @@ import carousel1 from "../images/step1Component.png";
 import carousel2 from "../images/carousel2Component.png";
 import carousel3 from "../images/carousel3Component.png";
 
-import oilSample1 from "../images/oilSample1.png";
+import banner2Oil from "../images/banner2Oil.png";
 import oilSample1x from "../images/oilSample1x.png";
 import oilSample3 from "../images/oilSample3.png";
-import oilSample4 from "../images/oilSample4.png";
+import oilSample4 from "../images/oilSample4N.png";
 import yellowIcon from "../images/yellowIcon.svg";
 import yellowLine1 from "../images/yellowLine1.png";
 import verticalLine1 from "../images/verticalLine1.svg";
@@ -40,44 +40,43 @@ class Home extends React.Component {
           <div id="landingCarousel " class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner ">
               <div class="carousel-item active" data-bs-interval="5000">
-                <img class="d-block banner" src={banner1}  alt="First slide" />
-                <div class="carousel-caption text-start d-flex align-items-center justify-content-between">
-                  <div className="mt-5">
+                <img class="d-block banner" src={banner1}  alt="First slide" />  
+                <div class="carousel-caption w-100 text-start d-flex align-items-center justify-content-between">
+                  <div className="mb-5 ps-2">
                     <h1 className='fw-semibold text-white display-5 mb-0'>
                         High Quality </h1>
                     <h1 className='fw-semibold text-white display-5'>
                         Premium <br/>Lubricants</h1>  
                     <img src={carousel1}/>
                   </div>  
-                  <img className="carouselCaptionImage position-relative" src={oilSample1} width="70%" style={{'left': '200px'}}/>
                 </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="6000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img class="d-block banner" src={banner2} alt="Second slide" />
                 <div class="carousel-caption text-start d-flex align-items-center justify-content-between">
-                  <div>
+                  <div className="mb-5 ps-2">
                     <h1 className='fw-semibold text-white display-5 mb-0'>
                           Ensuring optimal </h1>
                     <h1 className='fw-semibold text-white display-5'>
                         engine protection <br/> and performance.</h1>  
                       <img src={carousel2}/>
                   </div>  
-                  <img className="carouselCaptionImage position-relative" src={oilSample1x} width="46%" style={{'left': '150px'}} />
+                  <img className="carouselCaptionImage position-absolute start-50" src={banner2Oil} />
                 </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="6000">
+              <div class="carousel-item" data-bs-interval="5000">
                 <img class="d-block banner" src={banner3} alt="Second slide" />
                 <div class="carousel-caption text-start d-flex align-items-center justify-content-between">
-                  <div>
+                  <div className="mb-5 ps-2">
                     <h1 className='fw-semibold text-white display-5 mb-0'>
                           Ensuring optimal </h1>
                     <h1 className='fw-semibold text-white display-5'>
                         engine protection <br/> and performance.</h1>  
                       <img src={carousel3}/>
                   </div>  
-                  <img className="carouselCaptionImage position-relative" src={oilSample1x} width="46%" style={{'left': '150px'}} />
+                  <img className="carouselCaptionImage position-absolute start-50" src={oilSample1x} />
                 </div>
               </div>              
             </div>
