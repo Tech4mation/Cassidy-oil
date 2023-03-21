@@ -2,18 +2,18 @@ import React from "react";
 import ScrollToTopOnMount from "../components/scrolltoview";
 
 import { Link } from "react-router-dom";
-import blackOil from "../images/blackOil.svg";
-import blueOil from "../images/blueOil.svg";
-import blueOil2 from "../images/blueOil2.svg";
-import blueOil3 from "../images/blueOil2.svg";
-import greenOil from "../images/greenOil.svg";
-import greyOil from "../images/greyOil.svg";
-import greyOil2 from "../images/greyOil2.svg";
-import goldOil from "../images/goldOil.svg";
-import redOil from "../images/redOil.svg";
-import redOil2 from "../images/redOil2.svg";
-import goldOil2 from "../images/goldOil2.svg";
-import greenOil2 from "../images/greenOil2.svg";
+import blackOil from "../images/cassgoldPassengerSample.png";
+import blueOil from "../images/blueOilfbN.png";
+import blueOil2 from "../images/cassturboHdSaeSample.png";
+import blueOil3 from "../images/casstransDexH3Sample.png";
+import greenOil from "../images/casstekMotoSample.png";
+import greyOil from "../images/cassgoldSuperSample.png";
+import greyOil2 from "../images/casstransDexD2Sample.png";
+import goldOil from "../images/cassgoldPowerSample.png";
+import redOil from "../images/cassgoldAdvancedSample.png";
+import redOil2 from "../images/cassturboHdUltraSample.png";
+import goldOil2 from "../images/cassturboHdSaeSample.png";
+import greenOil2 from "../images/cassturboHdPlusSample.png";
 import blueKeg from "../images/blueKegN.png";
 import blackKeg from "../images/blackKegN.png";
 import drumYellow from "../images/drumYellow.png";
@@ -80,6 +80,7 @@ const products = [
         link: "/CassturboHdSae",
         category: "DEO",
         src: blueOil2 },
+
     {   title: "CASSTRANS DEX D2 ATF DEXRON IID",
         desc: "Multivehicle automatics transmission fluid and power steering fluid",
         link: "/CasstransDexD2",
@@ -91,14 +92,15 @@ const products = [
         category: "TO",
         src: blueOil3 },
 
-    {   title: "CASSMAX HD SAE40 API SF/CF",
+    {   title: "CASSTURBO HD SAE40 API SF/CF 25L",
         desc: "",
         link: null,
         category: "HDEO",
         src: blueKeg },
-    {   title: "CASSMAX SUPER MOTOR OIL 20W-50 API SL/CF",
+    {   title: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF 25L",
         desc: "",
         link: null,
+        category: "HDEO",
         src: blackKeg },
     {   title: "CASSMAX HD SAE40 API SF/CF  200L",
         desc: "",
