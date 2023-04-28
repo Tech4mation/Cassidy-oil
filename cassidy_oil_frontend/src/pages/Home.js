@@ -13,6 +13,7 @@ import banner2Oil from "../images/banner2Oil.png";
 import oilSample1x from "../images/oilSample1x.png";
 import oilSample3 from "../images/oilSample3.png";
 import oilSample4 from "../images/oilSample4N.png";
+import blueAlone from "../images/blueAlone.png";
 import yellowIcon from "../images/yellowIcon.svg";
 import yellowLine1 from "../images/yellowLine1.png";
 import verticalLine1 from "../images/verticalLine1.svg";
@@ -20,18 +21,34 @@ import verticalLine1 from "../images/verticalLine1.svg";
 import Project4 from "../components/Project4";
 import News from "../components/News";
 import Events from "../components/Events";
-import React from "react";
+import React, { useEffect } from "react";
 import $ from "jquery";
 
 
-class Home extends React.Component {
+function Home() {
 
-  componentDidMount() {
+  useEffect(() => {
       $('.Header .nav-item').removeClass('active')  
       $('.Header #nav-item1').addClass('active')
-  }  
 
-  render() {
+      window.addEventListener('scroll', reveal);      
+  }  )
+
+  const reveal = () => {
+    let reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible)
+        reveals[i].classList.add('active');
+      else
+      reveals[i].classList.remove('active');
+    }
+  }
+
     return (
       <div className="Home" id="home">
         <ScrollToTopOnMount />
@@ -44,9 +61,10 @@ class Home extends React.Component {
                 <div class="carousel-caption w-100 text-start d-flex align-items-center justify-content-between">
                   <div className="mb-5 ps-2">
                     <h1 className='fw-semibold text-white display-5 mb-0'>
-                        High Quality </h1>
+                          Ensuring optimal </h1>
                     <h1 className='fw-semibold text-white display-5'>
-                        Premium <br/>Lubricants</h1>  
+                        engine protection <br/> and performance.</h1>    
+                    
                     <img src={carousel1}/>
                   </div>  
                 </div>
@@ -56,13 +74,13 @@ class Home extends React.Component {
                 <img class="d-block banner" src={banner2} alt="Second slide" />
                 <div class="carousel-caption text-start d-flex align-items-center justify-content-between">
                   <div className="mb-5 ps-2">
-                    <h1 className='fw-semibold text-white display-5 mb-0'>
-                          Ensuring optimal </h1>
+                  <h1 className='fw-semibold text-white display-5 mb-0'>
+                        High Quality </h1>
                     <h1 className='fw-semibold text-white display-5'>
-                        engine protection <br/> and performance.</h1>  
+                        Premium <br/>Lubricants</h1>  
                       <img src={carousel2}/>
                   </div>  
-                  <img className="carouselCaptionImage position-absolute start-50" src={banner2Oil} />
+                  <img className="carouselCaptionImage carouselCaptionImage1  position-absolute start-50" src={banner2Oil} />
                 </div>
               </div>
 
@@ -71,9 +89,9 @@ class Home extends React.Component {
                 <div class="carousel-caption text-start d-flex align-items-center justify-content-between">
                   <div className="mb-5 ps-2">
                     <h1 className='fw-semibold text-white display-5 mb-0'>
-                          Ensuring optimal </h1>
+                          Designed to </h1>
                     <h1 className='fw-semibold text-white display-5'>
-                        engine protection <br/> and performance.</h1>  
+                        meet your <br/>specific need</h1>  
                       <img src={carousel3}/>
                   </div>  
                   <img className="carouselCaptionImage position-absolute start-50" src={oilSample1x} />
@@ -83,14 +101,14 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <section className='section2 px-md-5' id="about-us">
+        <section className='section2  px-md-5 reveal reveal2' id="about-us">
             <div className='container-fluid pt-4'>
                 <div className="header d-flex align-items-center ">
                     <img className='line1 ms-1' alt='oil sample' src={yellowLine1}/> <span className="ms-3">KNOW ABOUT US</span>
                 </div>  
-                <div className='row align-items-center mt-3'>
+                <div className='row align-items-center mt-3 '>
                     <div className='px-0 text-md-left  '>
-                        <img className='oilSample2' alt='oil sample' src={oilSample3} loading="lazy"/>  
+                        <img className='oilSample2 reveal animate2' alt='oil sample' src={oilSample3} loading="lazy"/>  
                         <h1 className='fw-semibold display-5 '>
                           At Cassidy Energy, we're passionate about engines</h1>
                         <p className='text-md-left main-text w-md-50'>With years of experience in the industry, we understand the importance of using high-quality oil to protect and enhance engine performance. That's why we've dedicated ourselves to producing the finest engine oils on the market.</p>
@@ -105,7 +123,7 @@ class Home extends React.Component {
            
         </section>      
   
-        <section className='section3 px-md-5 py-5' id="what-we-do">
+        <section className='section3 reveal px-md-5 py-5' id="what-we-do">
           <div className="header d-flex align-items-center mt-4">
               <img className='ms-3' alt='oil sample' src={yellowLine1}/> <span className="ms-3">WHAT WE DO</span>
           </div>
@@ -173,13 +191,15 @@ class Home extends React.Component {
   
         <section className='section4 px-md-5 py-5'>
           <div className="d-flex content align-items-center flex-column pt-4">
-            <h1 className='fw-semibold display-5 text-md-center w-md-75'>Protect Your Engine with Cassidy standard oil</h1>
+            <h1 className='fw-semibold display-5 text-md-center w-75 '>Protect Your Engine with Cassidy standard oil</h1>
             <p className="w-50 text-md-center"> Whether you're a seasoned mechanic or a casual car enthusiast, 
               we have the knowledge and expertise to help you get the most out of your engine.</p>
-            <div className="d-flex flex-md-row flex-column align-items-center mt-3 projects w-100">
-              <div className="d-flex flex-fill flex-column mx-3 ms-0 pt-5 px-5 w-75  pb-5 rounded project1"></div>
-              <div className="d-flex flex-fill flex-column mx-3 pt-5 px-5 pb-5 w-75 mt-4 mt-md-0 rounded project2"></div>
-              <div className="d-flex flex-fill flex-column mx-3 me-0 pt-5 px-5 w-75 mt-4 mt-md-0 pb-5 rounded project3"></div>
+            <div className="d-flex flex-md-row  flex-column align-items-center mt-3 projects w-100">
+              <div className="d-flex flex-fill reveal animate3 flex-column mx-3 ms-0 pt-5 w-75  pb-5 rounded project1"></div>              
+              <div className="d-flex flex-fill reveal flex-column mx-3 me-0 pt-5  w-75 mt-4 mt-md-0  rounded project3"></div>
+              <div className="d-flex justify-content-end align-items-end flex-fill reveal animate2 flex-column mx-3 pt-5 w-75 mt-4 mt-md-0 rounded project2">
+                <img src={blueAlone} alt='' />
+              </div>
             </div>
           </div>
           
@@ -190,12 +210,12 @@ class Home extends React.Component {
               <button className="btn btn-warning text-dark mt-3 mt-md-0" type="submit">Subscribe</button>
             </form>
           </div>          
-        </section>   
-        <News />
+        </section>
+        <div className="my-5 reveal">
+          <News />
+        </div>
       </div>
     );
   }  
-  
-}
 
 export default Home;
