@@ -312,10 +312,19 @@ body {
   width: fit-content;
   height: 30vh;
 }
+.Lubricants .card .hdeo1 {
+  height: 20vh;
+}
+.Lubricants .card .hdeo2 {
+  height: 35vh;
+}
 @media only screen and (max-width: 768px) {
   .Lubricants .card .card-img-top {
     width: fit-content;
-    height: 20vh;
+    height: 15vh;
+  }  
+  .Lubricants .card .hdeo1 {
+    height: 12vh;
   }  
 }
 

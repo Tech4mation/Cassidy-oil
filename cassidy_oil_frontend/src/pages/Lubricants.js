@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import blackOil from "../images/cassgoldPassengerSample.png";
 import blueOil from "../images/blueOilfbN.png";
 import blueOil2 from "../images/cassturboHdSaeSample.png";
-import blueOil3 from "../images/casstransDexH3Sample.png";
+import blueOil3 from "../images/casstransDexH3Sample.svg";
 import greenOil from "../images/casstekMotoSample.png";
 import greyOil from "../images/cassgoldSuperSample.png";
 import greyOil2 from "../images/casstransDexD2Sample.png";
@@ -14,8 +14,8 @@ import redOil from "../images/cassgoldAdvancedSample.png";
 import redOil2 from "../images/cassturboHdUltraSample.png";
 import goldOil2 from "../images/cassturboHdSaeSample.png";
 import greenOil2 from "../images/cassturboHdPlusSample.png";
-import blueKeg from "../images/blueKegN.png";
-import blackKeg from "../images/blackKegN.png";
+import blueKeg from "../images/blueKegN.svg";
+import blackKeg from "../images/blackKegN.svg";
 import drumYellow from "../images/drumYellow.png";
 import drumBlue from "../images/drumBlue.png";
 
@@ -96,21 +96,25 @@ const products = [
         desc: "",
         link: null,
         category: "HDEO",
+        cStyle: "HDEO1",
         src: blueKeg },
     {   title: "CASSGOLD SUPER MOTOR OIL 20W-50 API SL/CF 25L",
         desc: "",
         link: null,
         category: "HDEO",
+        cStyle: "HDEO1",
         src: blackKeg },
     {   title: "CASSMAX HD SAE40 API SF/CF  200L",
         desc: "",
         link: null,
         category: "HDEO",
+        cStyle: "HDEO2",
         src: drumYellow },
     {   title: "CASSTURBO HD SAE40 API SF/CF 25L 200L",
         desc: "",
         link: null,
         category: "HDEO",
+        cStyle: "HDEO2",
         src: drumBlue },
 ]
 
@@ -161,8 +165,18 @@ export default class Lubricants extends React.Component {
                                     if (product.category == filter || filter === 'all') 
                                     return (
                                         <div className="col-6 col-md-4 px-0 px-md-1">
-                                            <div class="card border-white " >                
-                                            <img loading="lazy" src={product.src} class="card-img-top ps-0 ms-0" alt="..." />
+                                            <div class="card border-white " >
+                                            {(() => {if (product.cStyle == 'HDEO1') return (
+                                                        <img loading="lazy" src={product.src} className="card-img-top ps-0 ms-0 hdeo1"  alt="..." />
+                                                    ) 
+                                                    else if (product.cStyle == 'HDEO2') return (
+                                                        <img loading="lazy" src={product.src} className="card-img-top ps-0 ms-0 hdeo2"  alt="..." />
+                                                    )
+                                                    else return(
+                                                        <img loading="lazy" src={product.src} className="card-img-top ps-0 ms-0" alt="..." />
+                                                    )
+                                                    })()}
+                                            
                                             <div class="card-body">
                                                 <h6 class="card-title">{product.title}</h6>
                                                 <p class="card-text small">{product.desc}</p>
