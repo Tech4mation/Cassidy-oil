@@ -53,10 +53,10 @@ export default function Header() {
                         }}>Lubricants</Link>
                         </li>
                         <li className="nav-item me-3 " id="nav-item5">
-                            <HashLink className="nav-link" to="#footer" onClick={(e) => {
+                            <Link className="nav-link" to="/ContactUs" onClick={(e) => {
                                 $('.nav-item').removeClass('active')
                                 e.target.parentElement.classList.add('active')
-                        }}>Contact Us</HashLink>
+                        }}>Contact Us</Link>
                         </li>
                   </ul>
                 </div>

@@ -22,6 +22,8 @@ import CassturboHdForce from './pages/productDetails/cassturboHdForce';
 import CassturboHdPlus from './pages/productDetails/cassturboHdPlus';
 import CassturboHdSae from './pages/productDetails/cassturboHdSae';
 import CassturboHdUltra from './pages/productDetails/cassturboHdUltra';
+import { NotFound } from './pages/notFound';
+import ContactUs from './pages/Contactus';
 
 // import "bootstrap/js/src/collapse.js";
 // import "../node_modules/jquery/dist/jquery.js";
@@ -48,6 +50,9 @@ class App extends React.Component {
             <Route path='/CassturboHdPlus' element={<CassturboHdPlus />} />
             <Route path='/CassturboHdSae' element={<CassturboHdSae />} />
             <Route path='/CassturboHdUltra' element={<CassturboHdUltra />} />
+            <Route path='/ContactUs' element={<ContactUs />} />
+
+            <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />
         </div>
