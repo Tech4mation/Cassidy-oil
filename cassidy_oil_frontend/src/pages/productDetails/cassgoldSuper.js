@@ -3,15 +3,18 @@ import sample from "../../images/cassgoldSuperSample.png";
 import pdf from "../../images/pdfIcon.svg";
 
 import Project4 from "../../components/Project4";
-import News from "../../components/News";
-import Events from "../../components/Events";
-
+import file from "../../pdfs/CASSGOLD SUPER MOTOR OIL 20W  Product data sheet.pdf";
 import ScrollToTopOnMount from "../../components/scrolltoview";
 
 
 export default function CassgoldSuper() {
+    function handleDownloadPDF() {
+        const pdfUrl = file;
+        window.location.href = pdfUrl;
+      }    
     return (
         <div className="CasstekPremium4t product ">
+            <ScrollToTopOnMount />    
             <div className="section1 d-flex align-items-center justify-content-center">
                 <h1 className="text-white fw-bold display-3">Automotive Lubricants</h1>
             </div>
@@ -111,7 +114,7 @@ export default function CassgoldSuper() {
                         <p>All packages should be stored under cover and should not be stored where ambient temperature exceeds 600C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside.  Follow MSDS for further instructions on storage, safe handling, and disposal of the product.</p>
                     </div>
 
-                    <div className="d-flex align-items-center mt-5 download">
+                    <div  onClick={handleDownloadPDF} className="d-flex align-items-center mt-5 download">
                         <img src={pdf} alt="pdf icon" width="30px" />    
                         <span className="ms-3">Click here to download PDF </span>
                     </div>                    

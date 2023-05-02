@@ -77,7 +77,7 @@ body {
 .product .details h4 {
   font-weight: 600;
 }
-.product  .sample {
+.product .sample {
   float: right;
 }
 .product .download {
@@ -298,6 +298,7 @@ body {
  color: black;
  font-weight: 600;
  text-decoration: none;
+ cursor: pointer;
 }
 .Lubricants .section2 .side-links .active {
   color: #F8A135 !important;
@@ -326,6 +327,10 @@ body {
   .Lubricants .card .hdeo1 {
     height: 12vh;
   }  
+  .product .sample {
+    float: right;
+    width: 80vw;
+  }
 }
 
 .Lubricants .card .card-title {

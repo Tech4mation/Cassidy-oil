@@ -4,11 +4,11 @@ import ScrollToTopOnMount from "../components/scrolltoview";
 import { Link } from "react-router-dom";
 import blackOil from "../images/cassgoldPassengerSample.png";
 import blueOil from "../images/blueOilfbN.png";
-import blueOil2 from "../images/cassturboHdSaeSample.png";
+import blueOil2 from "../images/cassturboHdForceSample.png";
 import blueOil3 from "../images/casstransDexH3Sample.svg";
 import greenOil from "../images/casstekMotoSample.png";
 import greyOil from "../images/cassgoldSuperSample.png";
-import greyOil2 from "../images/casstransDexD2Sample.png";
+import greyOil2 from "../images/casstransDexD2Sample.svg";
 import goldOil from "../images/cassgoldPowerSample.png";
 import redOil from "../images/cassgoldAdvancedSample.png";
 import redOil2 from "../images/cassturboHdUltraSample.png";
@@ -59,7 +59,7 @@ const products = [
         src: redOil },
 
     {   title: "CASSTURBO HD SAE40 API CF/SF",
-        desc: "Superior performance Multigrade diesel engine oil designed with active protection ",
+        desc: "Heavy duty Mono-grade mineral engine oil",
         link: "/CassturboHdSae",
         category: "DEO",
         src: goldOil2 },
@@ -75,9 +75,9 @@ const products = [
         link: "/CassturboHdUltra",
         category: "DEO",
         src: redOil2 },
-    {   title: "CASSTURBO HD SAE40 API CF/SF",
+    {   title: "CASSTURBO HD FORCE 15W40 CH-4 ",
         desc: "Superior performance Multigrade diesel engine oil designed with active protection ",
-        link: "/CassturboHdSae",
+        link: "/CassturboHdForce",
         category: "DEO",
         src: blueOil2 },
 
@@ -159,7 +159,7 @@ export default class Lubricants extends React.Component {
                             <a className="py-2" id="HDEO" onClick={() => this.filter('HDEO')} >Heavy Duty Diesel Engine Oils / Industrial Lubricants</a>
                         </div>
                         <div className="container">
-                            <div className="row">
+                            <div className="row align-items-end">
                                 {products.map((product) => {
                                     let filter = this.state.cat
                                     if (product.category == filter || filter === 'all') 

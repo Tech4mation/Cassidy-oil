@@ -2,14 +2,15 @@ import { Link } from "react-router-dom";
 import sample from "../../images/casstransDexD2Sample.png";
 import pdf from "../../images/pdfIcon.svg";
 
-import Project4 from "../../components/Project4";
-import News from "../../components/News";
-import Events from "../../components/Events";
-
+import file from "../../pdfs/CASSTRANS DEX D2 ATF DEXRON IID Product data sheet.pdf";
 import ScrollToTopOnMount from "../../components/scrolltoview";
 
 
 export default function CasstransDexD2() {
+    function handleDownloadPDF() {
+        const pdfUrl = file;
+        window.location.href = pdfUrl;
+      }        
     return (
         <div className="CasstekPremium4t product ">
         <ScrollToTopOnMount />    
@@ -111,7 +112,7 @@ export default function CasstransDexD2() {
                         <p>All packages should be stored under cover and should not be stored where ambient temperature exceeds 600C or freezing conditions. To avoid ingress of water and damage, drums should be stored horizontally if they are stored outside.  Follow MSDS for further instructions on storage, safe handling, and disposal of the product.</p>
                     </div>
 
-                    <div className="d-flex align-items-center mt-5 download">
+                    <div onClick={handleDownloadPDF} className="d-flex align-items-center mt-5 download">
                         <img src={pdf} alt="pdf icon" width="30px" />    
                         <span className="ms-3">Click here to download PDF </span>
                     </div>                    
