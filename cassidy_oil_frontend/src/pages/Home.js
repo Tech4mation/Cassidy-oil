@@ -50,10 +50,10 @@ function Home() {
   }
 
     return (
-      <div className="Home" id="home">
+      <div className="Home" data-bs-spy="scroll" data-bs-target="#headerNavbar" data-bs-offset="0" tabindex="0">
         <ScrollToTopOnMount />
         
-        <section className="section1 mx-0">
+        <section id="home" className="section1 mx-0">
           <div id="landingCarousel " class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner ">
               <div class="carousel-item active" data-bs-interval="5000">

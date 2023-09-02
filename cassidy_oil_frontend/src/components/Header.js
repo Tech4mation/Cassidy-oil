@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <header className ="Header px-5 fixed-top">
-            <nav class="navbar py-1 navbar-expand-lg bg-white">
+            <nav class="navbar py-1 navbar-expand-lg bg-white" id="header-nav">
               <div class="container-fluid">
                 <Link className="navbar-brand" to="/">
                   <img src={logo3} width="130"  alt="" />
@@ -29,22 +29,13 @@ export default function Header() {
                 <div class="collapse navbar-collapse" id="headerNavbar">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item me-3 active" id="nav-item1" >
-                            <HashLink className="nav-link" to="/#home" onClick={(e) => {
-                                $('.nav-item').removeClass('active')
-                                e.target.parentElement.classList.add('active')
-                        }}>Home</HashLink>
+                            <a className="nav-link" href="/" >Home</a>
                     </li>
                     <li className="nav-item me-3" id="nav-item2">
-                            <HashLink className="nav-link" to="/#about-us" onClick={(e) => {
-                                $('.nav-item').removeClass('active')
-                                e.target.parentElement.classList.add('active')
-                        }}>About us</HashLink>
+                            <HashLink className="nav-link" to="/#about-us" >About us</HashLink>
                         </li>
                         <li className="nav-item me-3 " id="nav-item3">
-                            <HashLink className="nav-link" to="/#what-we-do" onClick={(e) => {
-                                $('.nav-item').removeClass('active')
-                                e.target.parentElement.classList.add('active')
-                        }}>What We Do</HashLink>
+                            <HashLink className="nav-link" to="/#what-we-do" >What We Do</HashLink>
                         </li>
                         <li className="nav-item me-3 " id="nav-item4">
                             <Link className="nav-link" to="/Lubricants" onClick={(e) => {
@@ -65,3 +56,9 @@ export default function Header() {
         </header>
     )
 }
+
+
+// onClick={(e) => {
+//   $('.nav-item').removeClass('active')
+//   e.target.parentElement.classList.add('active')
+// }}
