@@ -12,7 +12,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.lg-screen {
+  display: block;
+}
+.sm-screen {
+  display: none;
+}
 .form-control {
   background-color: #F7F7F7 !important;
 }
@@ -95,6 +100,8 @@ body {
 /* Header component */
 .Header {
   height: 8vh;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .Header .navbar-nav .nav-item {
   z-index: 10;
@@ -103,6 +110,12 @@ body {
 .Header .navbar-nav .active .nav-link {
   color: #152C41 !important;
   font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .Header {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 
@@ -142,6 +155,12 @@ body {
   /* background-color: red; */
   /* height: 300px; */
 }
+@media only screen and (max-width: 768px) {
+  .Home .section1 .carousel-caption {
+    padding-left: 15px;
+  }
+}
+
 .Home .section1 .carousel-caption h1 {
   text-shadow: 0 0 40px black;
 }
@@ -180,6 +199,17 @@ body {
   /* position: relative;
   left: 25px; */
 }
+@media only screen and (max-width: 768px) {
+  .Home .section2 .oilSample2 {
+    width: 90vw !important;
+    float: none;
+    transition: 1s all ease;
+    margin-top: 20px;
+    /* position: relative;
+    left: 25px; */
+  }
+}
+
 .Home .section2 .row {
   padding-left: 100px;  
 }
@@ -195,6 +225,15 @@ body {
 .Home .section2 .footer span {
   width: 200px;
 }
+@media only screen and (max-width: 768px) {
+  .Home .section2 .btn-warning {
+    width: 90vw;
+  }  
+  .Home .section2 .content{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}  
 
 .Home .section3 {
   background-color: #F8F8F8;
@@ -209,13 +248,32 @@ body {
   top: 20px;
   left: -1px;
 }
+@media only screen and (max-width: 768px) {
+  .Home .section3 .content {
+    padding-left: 15px; 
+    padding-right: 15px;
+  }
+  .Home .section3 .products {
+    width: 100% !important;
+  }
+  .Home .section3 .btn-warning {
+    width: 90vw;
+  }  
+}
 
 .Home .section4 .content h1{
   padding-left: 100px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
   .Home .section4 .content h1{
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100% !important;
+  } 
+  .Home .section4 .content p{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100% !important;
   }
 }
 
@@ -373,4 +431,31 @@ body {
 .animate3.active {
   transform: translateX(0);
   opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .lg-screen {
+      display: none;
+    }
+    .sm-screen {
+      display: block;
+  }
+}
+
+/* news */ 
+.news {
+  padding: 50px;
+  padding: 50px;
+}
+@media (max-width: 768px) {
+  .news {
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+}
+@media (max-width: 768px) {
+    .line {
+      width: 40%;
+      max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  }
 }

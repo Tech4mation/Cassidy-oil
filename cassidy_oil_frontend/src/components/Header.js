@@ -16,9 +16,9 @@ export default function Header() {
 
 
     return (
-        <header className ="Header px-5 fixed-top">
-            <nav class="navbar py-1 navbar-expand-lg bg-white" id="header-nav">
-              <div class="container-fluid">
+        <header className ="Header fixed-top">
+            <nav class="navbar py-1 navbar-expand-lg bg-white " id="header-nav">
+              <div class="container">
                 <Link className="navbar-brand" to="/">
                   <img src={logo3} width="130"  alt="" />
                 </Link>

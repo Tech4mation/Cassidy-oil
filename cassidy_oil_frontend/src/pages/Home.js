@@ -2,8 +2,11 @@ import ScrollToTopOnMount from "../components/scrolltoview";
 import { Link } from "react-router-dom";
 
 import banner1 from "../images/banner1.png";
+import banner1_s from "../images/banner1_s.png";
 import banner2 from "../images/banner2.png";
+import banner2_s from "../images/banner2_s.png";
 import banner3 from "../images/banner3.png";
+import banner3_s from "../images/banner3_s.png";
 
 import carousel1 from "../images/step1Component.png";
 import carousel2 from "../images/carousel2Component.png";
@@ -36,28 +39,43 @@ function Home() {
 
   const reveal = () => {
     let reveals = document.querySelectorAll(".reveal");
+    let oilSamples = document.querySelector(".oilSamples")
 
+    let windowHeight = window.innerHeight;
     for (var i = 0; i < reveals.length; i++) {
-      let windowHeight = window.innerHeight;
       let elementTop = reveals[i].getBoundingClientRect().top;
       let elementVisible = 100;
 
       if (elementTop < windowHeight - elementVisible)
         reveals[i].classList.add('active');
       else
-      reveals[i].classList.remove('active');
+        reveals[i].classList.remove('active');
     }
+
+    // for (var i = 0; i < oilSamples.length; i++) {
+    //   let elementTop = oilSamples[i].getBoundingClientRect().top;
+    //   let elementVisible = 100;
+
+    //   if (elementTop < windowHeight - elementVisible)
+    //     oilSamples[i].classList.add('active_sm');
+    //   else
+    //     oilSamples[i].classList.remove('active_sm');
+    // }
   }
 
     return (
-      <div className="Home" data-bs-spy="scroll" data-bs-target="#headerNavbar" data-bs-offset="0" tabindex="0">
+      <div className="Home overflow-hidden" data-bs-spy="scroll" data-bs-target="#headerNavbar" data-bs-offset="0" tabindex="0">
         <ScrollToTopOnMount />
-        
+        {/* class="carousel slide" data-bs-ride="carousel" */}
         <section id="home" className="section1 mx-0">
-          <div id="landingCarousel " class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner ">
+          <div id="landingCarousel " >
+            <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
-                <img class="d-block banner" src={banner1}  alt="First slide" />  
+              <img
+                srcSet={`${banner1_s} 768w, ${banner1}`}
+                alt="banner1"
+                class="d-block banner"
+              />
                 <div class="carousel-caption w-100 text-start d-flex align-items-center justify-content-between">
                   <div className="mb-5 ps-2">
                     <h1 className='fw-semibold text-white display-5 mb-0'>
@@ -71,7 +89,11 @@ function Home() {
               </div>
 
               <div class="carousel-item" data-bs-interval="5000">
-                <img class="d-block banner" src={banner2} alt="Second slide" />
+              <img 
+                class="d-block banner" 
+                srcSet={`${banner2_s} 768w, ${banner2}`} 
+                alt="Second slide" 
+                />
                 <div class="carousel-caption text-start d-flex align-items-center justify-content-between">
                   <div className="mb-5 ps-2">
                   <h1 className='fw-semibold text-white display-5 mb-0'>
@@ -85,7 +107,11 @@ function Home() {
               </div>
 
               <div class="carousel-item" data-bs-interval="5000">
-                <img class="d-block banner" src={banner3} alt="Second slide" />
+                <img 
+                class="d-block banner" 
+                srcSet={`${banner3_s} 768w, ${banner3}`} 
+                alt="Second slide" 
+                />
                 <div class="carousel-caption text-start d-flex align-items-center justify-content-between">
                   <div className="mb-5 ps-2">
                     <h1 className='fw-semibold text-white display-5 mb-0'>
@@ -106,9 +132,9 @@ function Home() {
                 <div className="header d-flex align-items-center ">
                     <img className='line1 ms-1' alt='oil sample' src={yellowLine1}/> <span className="ms-3">KNOW ABOUT US</span>
                 </div>  
-                <div className='row align-items-center mt-3 '>
-                    <div className='px-0 text-md-left  '>
-                        <img className='oilSample2 reveal animate2' alt='oil sample' src={oilSample3} loading="lazy"/>  
+                <div className='row align-items-center mt-3 content'>
+                    <div className='px-0 text-md-left '>
+                      <img className='oilSample2 lg-screen reveal animate2' alt='oil sample' src={oilSample3} loading="lazy"/>  
                         <h1 className='fw-semibold display-5 '>
                           At Cassidy Energy, we're passionate about engines</h1>
                         <p className='text-md-left main-text w-md-50'>With years of experience in the industry, we understand the importance of using high-quality oil to protect and enhance engine performance. That's why we've dedicated ourselves to producing the finest engine oils on the market.</p>
@@ -117,7 +143,8 @@ function Home() {
                                 Learn more
                             </button>
                         </Link>
-                    </div>                  
+                    </div>     
+                    <img className='oilSample2 sm-screen reveal animate2' alt='oil sample' src={oilSample3} loading="lazy"/>               
                 </div>
             </div>
            
@@ -133,11 +160,11 @@ function Home() {
             <div className="position-relative">
               <img className="verticalLine1 position-absolute" src={verticalLine1} height="400px" alt="" />
               <div className="d-md-flex ">
-                <div className="d-flex flex-column w-75 mt-3">
+                <div className="d-flex flex-column w-75 mt-3 products">
                   <div className="d-flex align-items-start ">
                     <img src={yellowIcon} width="20px" />
                     <div className="ms-4">
-                      <h5 className="fw-bolder">CASSTEK PREMIUM 4T 20W-40 API SL/MA2</h5>
+                      <h5 className="fw-bolder ">CASSTEK PREMIUM 4T 20W-40 API SL/MA2</h5>
                       <p className="mt-2">
                         Premium Multigrade Okada, Kekenapep engine oil
                       </p>
@@ -181,7 +208,7 @@ function Home() {
                   </Link>                  
                 </div>
                 <div className="">
-                  <img loading="lazy" className='oilSample4' alt='oil sample' src={oilSample4} />
+                  <img loading="lazy" className='oilSample4 lg-screen' alt='oil sample' src={oilSample4} />
                 </div>
               </div>
             </div>
@@ -190,7 +217,7 @@ function Home() {
         </section>   
   
         <section className='section4 px-md-5 py-5'>
-          <div className="d-flex content align-items-center flex-column pt-4">
+          <div className="d-flex content align-items-center flex-column pt-4 r">
             <h1 className='fw-semibold display-5 text-md-center w-75 '>Protect Your Engine with Cassidy standard oil</h1>
             <p className="w-50 text-md-center"> Whether you're a seasoned mechanic or a casual car enthusiast, 
               we have the knowledge and expertise to help you get the most out of your engine.</p>

@@ -6,11 +6,11 @@ import greyLine1 from "../images/greyLine1.png";
 
 export default function News() {
     return (
-        <div className="px-5">
-            <div className="mt-5 news">
+        <div className=" news">
+            <div className="mt-5">
             <div className="d-flex  align-items-center">
-                <h3 className="fw-bold py-4 me-4">Read Our News</h3>
-                <img loading="lazy" src={greyLine1} height="3px" width="80%" alt="" />  
+                <h3 className="fw-bold me-4 py-4">Read Our News</h3>
+                <img loading="lazy" className="line" src={greyLine1} height="3px" width="80%" alt="" />  
             </div>  
             
             <div className="d-flex flex-md-row flex-column">
