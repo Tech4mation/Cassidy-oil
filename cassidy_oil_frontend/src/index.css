@@ -144,8 +144,6 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
-
 .Home .section1 .carousel-caption {
   left: 0px;
   bottom: 0px;
@@ -158,6 +156,15 @@ body {
 @media only screen and (max-width: 768px) {
   .Home .section1 .carousel-caption {
     padding-left: 15px;
+  }
+  .Home .section1 {
+    height: 70vh;
+  }
+  .Home .section1 .carousel-item {
+    height: 70vh;
+  }
+  .Home .section1 .carousel-item .banner {
+    height: 70vh;
   }
 }
 
@@ -200,6 +207,9 @@ body {
   left: 25px; */
 }
 @media only screen and (max-width: 768px) {
+  .Home .section2 {
+    padding-top: 30px;
+  }
   .Home .section2 .oilSample2 {
     width: 90vw !important;
     float: none;
