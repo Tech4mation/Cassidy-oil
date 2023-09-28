@@ -27,6 +27,10 @@ import ContactUs from './pages/Contactus';
 
 import {loadProgressBar} from 'axios-progress-bar'
 import 'axios-progress-bar/dist/nprogress.css';
+import CassgoldUltraOW30 from './pages/productDetails/cassgoldUltraOW30';
+import CassgoldUltraOW40 from './pages/productDetails/cassgoldUltraOW40';
+import CassgoldAdvancedFully from './pages/productDetails/cassgoldAdvancedFully';
+import CassgoldUltraFully from './pages/productDetails/cassgoldUltraFully';
 
 // loadProgressBar();
 // import "bootstrap/js/src/collapse.js";
@@ -55,6 +59,12 @@ class App extends React.Component {
             <Route path='/CassturboHdPlus' element={<CassturboHdPlus />} />
             <Route path='/CassturboHdSae' element={<CassturboHdSae />} />
             <Route path='/CassturboHdUltra' element={<CassturboHdUltra />} />
+
+            <Route path='/CassgoldUltraOW30' element={<CassgoldUltraOW30 />} />
+            <Route path='/CassgoldUltraOW40' element={<CassgoldUltraOW40 />} />
+            <Route path='/CassgoldAdvancedFully' element={<CassgoldAdvancedFully />} />
+            <Route path='/CassgoldUltraFully' element={<CassgoldUltraFully />} />
+
             <Route path='/ContactUs' element={<ContactUs />} />
 
             <Route path='*' element={<NotFound />} />

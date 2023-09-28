@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sample from "../../images/CassgoldUltraFullySample.png";
+import sample from "../../images/cassgoldUltraFullySample.png";
 import pdf from "../../images/pdfIcon.svg";
 
 import file from "../../pdfs/CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W Product data sheet.pdf";
@@ -33,11 +33,11 @@ export default function CassgoldUltraFully() {
                     </div>
                     <div className="performance mt-5">
                         <h4>PERFORMANCE</h4>    
-                        <p>Meets the requirements of SAE 5W-30, API SN/CF, ACEA C3-12, MB229.31, VW 502 00/ 5-5 00/ 505 01, BMW- Longlife-04, Porsche A40, Ford WSS-M2C917A, RN 0700/0710, Opel Dexos 2</p>
+                        <p>Meets the requirements of SAE 0W-20, API SN/CF, API SM,SL, SJ, ILSAC GF-5</p>
                     </div>
                     <div className="application mt-5">
                         <h4>APPLICATION</h4>    
-                        <p>CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W-30 API SN/CF can be used in new generation passenger cars, SUVs, MPVs running with petrol as their fuel source. OEM recommended drain interval is to be followed. This oil meets API SN specification which ensures that this oil offers industry leading protection against, oil deposits, sludge formation, oil thermal breakdown under many operating conditions and ensures year round protection.</p>
+                        <p>CASSGOLD ULTRATECH FULLY SYNTHETIC MOTOR OIL 0W-20 API SN/CF can be used in new generation passenger cars, SUVs, MPVs running with petrol as their fuel source for enhanced fuel economy with higher power output. OEM recommended drain interval is to be followed. This oil meets API SN specification which ensures that this oil offers industry leading protection against, oil deposits, sludge formation, oil thermal breakdown under many operating conditions and ensures year round protection.</p>
                     </div>
                     <div className="benefits mt-5">
                         <h4>PRODUCT BENEFITS</h4>
@@ -75,37 +75,37 @@ export default function CassgoldUltraFully() {
                             <tr>
                                 <td>Density at 300C (g/ml)</td>
                                 <td>ASTM D 1298</td>
-                                <td>0.842</td>
+                                <td>0.830</td>
                             </tr>
                             <tr>
                                 <td>Kinematic Viscosity at 400C (cSt)</td>
                                 <td>ASTM D445</td>
-                                <td>65</td>
+                                <td>47.6</td>
                             </tr>
                             <tr>
                                 <td>Kinematic Viscosity at 1000C (cSt)</td>
                                 <td>ASTM D445</td>
-                                <td>11.5</td>
+                                <td>8.6</td>
                             </tr>
                             <tr>
                                 <td>Viscosity Index</td>
                                 <td>ASTM D 2270</td>
-                                <td>173</td>
+                                <td>160</td>
                             </tr>
                             <tr>
                                 <td>Pour Point (0C)</td>
                                 <td>ASTM D 97</td>
-                                <td>-32</td>
+                                <td>-36</td>
                             </tr>
                             <tr>
                                 <td>Flash Point (COC) (0C)</td>
                                 <td>ASTM D 93</td>
-                                <td>225</td>
+                                <td>232</td>
                             </tr>
                             <tr>
                                 <td>TBN (mg KOH/g)</td>
                                 <td>ASTM D 2896B</td>
-                                <td>6.71</td>
+                                <td>7.0</td>
                             </tr>
                         </tbody>
                     </table>

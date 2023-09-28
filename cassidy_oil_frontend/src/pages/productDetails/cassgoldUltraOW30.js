@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sample from "../../images/CassgoldUltraOW30.png";
+import sample from "../../images/cassgoldUltraOW30.png";
 import pdf from "../../images/pdfIcon.svg";
 
 import file from "../../pdfs/CASSGOLD ADVANCED FULLY SYNTHETIC MOTOR OIL 5W Product data sheet.pdf";
